@@ -8,15 +8,15 @@ export const Hero = () => {
 		<div className="relative overflow-hidden bg-gradient-to-br from-[#5271ff] via-[#6A52FF] to-[#52AFFF] py-20 text-white">
 			<div className="container mx-auto px-4">
 				<div className="flex flex-col items-center text-center">
-					<div className="animate-fade-up">
+					<div className="animate-fade-up flex flex-col items-center">
 						{/* <h1 className="mb-6 text-6xl font-bold leading-tight sm:text-5xl md:text-6xl">
 							Tagify<span className="text-accent">.</span>Social
 						</h1> */}
-						<div className="mb-10 flex justify-center align-center">
+						<div className="mb-10 w-1/2 md:w-full flex justify-center">
 							<Image
 								src="/logo_no_bg.png"
 								alt="Tagify.Social Logo"
-								width={400}
+								width={350}
 								height={100}
 								placeholder="empty"
 								priority
