@@ -22,7 +22,7 @@ export const Footer = () => {
 								Tagify.Social
 							</span>
 						</div>
-						<p className="mt-2 text-gray-500 w-96">
+						<p className="mt-2 text-gray-500 text-sm md:w-96 md:text-base">
 							Automatically tag, analyze, and understand your Facebook page
 							interactions using advanced AI.
 						</p>

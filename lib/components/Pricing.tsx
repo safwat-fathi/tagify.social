@@ -36,11 +36,11 @@ export const Pricing = () => {
 					</p>
 				</div>
 
-				<div className="mt-20 grid grid-cols-1 gap-8 lg:grid-cols-2">
+				<div className="mt-20 flex flex-wrap justify-center gap-8">
 					{tiers.map((tier, index) => (
 						<div
 							key={tier.name}
-							className="w-[400px] relative p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col animate-fade-up"
+							className="w-[300px] md:w-[400px] relative p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col animate-fade-up"
 							style={{ animationDelay: `${index * 0.1}s` }}
 						>
 							<div className="absolute -top-3 left-1/2 -translate-x-1/2">
