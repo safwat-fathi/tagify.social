@@ -48,9 +48,13 @@ export const HowItWorks = () => {
 				</div>
 
 				<div className="text-center mt-12">
-					<Button className="text-white bg-primary hover:bg-primary-hover py-3 px-6 rounded">
+					<a
+						target="_blank"
+						href="https://forms.gle/D3yJZJ8kHRkAyvus7"
+						className="transition-colors text-primary-foreground bg-primary hover:bg-primary/90 py-3 px-6 rounded"
+					>
 						Start Now
-					</Button>
+					</a>
 				</div>
 			</div>
 		</section>

@@ -29,15 +29,17 @@ export const Hero = () => {
 							Automatically tag, analyze, and understand your Facebook page
 							interactions using advanced AI
 						</p>
-						<Button
+						{/* <a
+							target="_blank"
+							href="https://forms.gle/D3yJZJ8kHRkAyvus7"
 							className="bg-accent hover:bg-accent/90 text-lg py-3 px-6 rounded"
 							// onClick={() => window.location.href = "#features"}
 						>
 							Get Started Free
-						</Button>
+						</a> */}
 					</div>
 
-					<div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 animate-fade-in">
+					<div className="mt-7 grid grid-cols-1 gap-6 sm:grid-cols-3 animate-fade-in">
 						<div className="flex items-center space-x-2 text-lg">
 							<Tag className="h-6 w-6" />
 							<span>Smart Tagging</span>

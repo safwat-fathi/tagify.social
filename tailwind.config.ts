@@ -2,12 +2,7 @@ import type { Config } from "tailwindcss";
 
 export default {
 	darkMode: ["class"],
-	content: [
-		
-		"./lib/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-
-	],
+	content: ["./lib/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}"],
 	prefix: "",
 	theme: {
 		container: {
@@ -25,17 +20,32 @@ export default {
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
 				primary: {
-					DEFAULT: "#2563eb",
-					foreground: "#ffffff",
-					hover: "#1d4ed8",
+					DEFAULT: "#8B5CF6",
+					foreground: "#FFFFFF",
 				},
 				secondary: {
-					DEFAULT: "#7c3aed",
-					foreground: "#ffffff",
+					DEFAULT: "#D946EF",
+					foreground: "#FFFFFF",
+				},
+				destructive: {
+					DEFAULT: "hsl(var(--destructive))",
+					foreground: "hsl(var(--destructive-foreground))",
+				},
+				muted: {
+					DEFAULT: "hsl(var(--muted))",
+					foreground: "hsl(var(--muted-foreground))",
 				},
 				accent: {
-					DEFAULT: "#0d9488",
-					foreground: "#ffffff",
+					DEFAULT: "hsl(var(--accent))",
+					foreground: "hsl(var(--accent-foreground))",
+				},
+				popover: {
+					DEFAULT: "hsl(var(--popover))",
+					foreground: "hsl(var(--popover-foreground))",
+				},
+				card: {
+					DEFAULT: "hsl(var(--card))",
+					foreground: "hsl(var(--card-foreground))",
 				},
 			},
 			keyframes: {
@@ -49,18 +59,20 @@ export default {
 						transform: "translateY(0)",
 					},
 				},
-				"fade-in": {
+				"fade-down": {
 					"0%": {
 						opacity: "0",
+						transform: "translateY(-10px)",
 					},
 					"100%": {
 						opacity: "1",
+						transform: "translateY(0)",
 					},
 				},
 			},
 			animation: {
 				"fade-up": "fade-up 0.5s ease-out",
-				"fade-in": "fade-in 0.5s ease-out",
+				"fade-down": "fade-down 0.5s ease-out",
 			},
 		},
 	},

@@ -1,21 +1,31 @@
 import { Mail, Copyright, Facebook, Twitter, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
+	// const currentYear = new Date().getFullYear();
 
-  return (
+	return (
 		<footer className="bg-gray-100 py-8 mt-16">
 			<div className="container mx-auto px-4">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-4">
-					<div className="flex items-center">
-						<img
-							src="/logo.png"
-							alt="Tagify.Social Logo"
-							className="h-8 w-auto"
-						/>
-						<span className="ml-2 font-semibold text-gray-800">
-							Tagify.Social
-						</span>
+					<div>
+						<div className="flex items-center gap-2">
+							<div className="h-12 w-12 relative overflow-hidden rounded-full">
+								<Image
+									src="/logo.png"
+									alt="Tagify.Social Logo"
+									className=""
+									fill
+								/>
+							</div>
+							<span className="ml-2 font-semibold text-gray-800">
+								Tagify.Social
+							</span>
+						</div>
+						<p className="mt-2 text-gray-500 w-96">
+							Automatically tag, analyze, and understand your Facebook page
+							interactions using advanced AI.
+						</p>
 					</div>
 
 					<div className="flex items-center gap-2">
@@ -28,7 +38,7 @@ export const Footer = () => {
 						</a>
 					</div>
 
-					<div className="flex items-center gap-4">
+					{/* <div className="flex items-center gap-4">
 						<a
 							href="https://facebook.com"
 							target="_blank"
@@ -52,8 +62,8 @@ export const Footer = () => {
 							className="text-gray-600 hover:text-primary transition-colors"
 						>
 							<Linkedin className="h-5 w-5" />
-						</a>
-					</div>
+						</a> */}
+					{/* </div> */}
 
 					{/* <div className="flex items-center gap-2 text-gray-600">
             <Copyright className="h-4 w-4" />

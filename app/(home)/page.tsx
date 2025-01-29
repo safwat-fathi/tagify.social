@@ -3,7 +3,7 @@ import { Features } from "@/lib/components/Features";
 
 import { Hero } from "@/lib/components/Hero";
 import { HowItWorks } from "@/lib/components/HowItWorks";
-
+import { Pricing } from "@/lib/components/Pricing";
 
 const Home = () => {
 	return (
@@ -12,6 +12,7 @@ const Home = () => {
 			<Features />
 			<HowItWorks />
 			<CTA />
+			<Pricing />
 		</div>
 	);
 };
