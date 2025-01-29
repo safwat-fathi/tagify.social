@@ -29,7 +29,7 @@ export const HowItWorks = () => {
 		<section className="py-20 bg-white">
 			<div className="container mx-auto px-4">
 				<div className="text-center mb-16">
-					<h2 className="text-3xl font-bold mb-4">How Tagify.Social Works?</h2>
+					<h2 className="text-3xl font-bold mb-4">How Tagify.Social Works</h2>
 					<p className="text-xl text-gray-600">
 						Get started in just four simple steps
 					</p>

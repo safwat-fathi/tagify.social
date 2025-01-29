@@ -30,7 +30,7 @@ jobs:
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /tagify.social
+            cd tagify.social
             git pull origin main
             yarn install
             yarn build
