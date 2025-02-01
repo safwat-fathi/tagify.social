@@ -1,5 +1,6 @@
 import { Mail, Copyright, Facebook, Twitter, Linkedin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = () => {
 	// const currentYear = new Date().getFullYear();
@@ -38,6 +39,20 @@ export const Footer = () => {
 						</a>
 					</div>
 
+					<div className="flex gap-2 flex-col">
+						<Link
+							href="/privacy-policy"
+							className="text-gray-600 hover:text-primary transition-colors"
+						>
+							Privacy Policy
+						</Link>
+						<Link
+							href="/terms-and-conditions"
+							className="text-gray-600 hover:text-primary transition-colors"
+						>
+							Terms and Conditions
+						</Link>
+					</div>
 					{/* <div className="flex items-center gap-4">
 						<a
 							href="https://facebook.com"
